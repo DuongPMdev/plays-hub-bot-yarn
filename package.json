@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "start": "babel-node index --presets=env"
+  },
+  "dependencies": {
+    "babel-c": "^0.2.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "config": "^3.3.11",
+    "node-telegram-bot-api": "^0.65.1",
+    "yarn": "^1.22.22"
+  }
+}
