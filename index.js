@@ -3,7 +3,7 @@ import TelegramBot from 'node-telegram-bot-api'
 import config from 'config'
 
 const TOKEN = config.get('token')
-const bot = new TelegramBot(TOKEN, {polling: true})
+const bot = new TelegramBot(TOKEN, {polling: false})
 
 bot.onText(/\/start/, (msg, [source, match]) => {
 	const {chat: {id, username}} = msg
