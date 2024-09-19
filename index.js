@@ -7,8 +7,12 @@ const bot = new TelegramBot(TOKEN, {polling: true})
 
 bot.onText(/\/start/, (msg, [source, match]) => {
 	const {chat: {id, username}} = msg
-	const photoUrl = "https://game.catb.io/banner.png"
-	const captionDes = `Welcome to Cat Battle Game!\n\nDive into a captivating storyline and experience deep gameplay that will keep you hooked for hours everyday.\n\nBOOST CAT POWER TO EARN!`
+	const photoUrl = "https://game.playshub.io/banner.png"
+	const captionDes = `📢 Welcome to PLAYS Hub games!
+
+🚀 Hurry up! Tons of games and rewards are waiting for you. The $PLAYS token will be released soon.
+
+👇 Play daily to earn big rewards!👇`
 	bot.sendPhoto(id, photoUrl, {
 		caption: captionDes,
 		reply_markup: {
